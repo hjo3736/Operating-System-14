@@ -83,12 +83,14 @@ typedef int tid_t;
 struct thread
   {
     /* Owned by thread.c. */
-    /* only for priority donation
+    // only for priority donation---------------
     int init_priority;
     struct lock *wait_on_lock;
     struct list donations;
     struct list_elem donation_elem;
-    */ 
+  
+    //--------------------------------------------
+
     int64_t wakeup_tick;
     tid_t tid;                          /* Thread identifier. */
     enum thread_status status;          /* Thread state. */
