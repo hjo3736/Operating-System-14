@@ -176,15 +176,6 @@ refresh_priority (void)
       cur->priority = front->priority;
   }
 }
-
-
-
-
-
-
-
-
-
   
 void
 thread_start (void) 
@@ -381,10 +372,10 @@ thread_unblock (struct thread *t)
   ASSERT (t->status == THREAD_BLOCKED);
 
   //code for priority donation
-  //list_push_back (&ready_list, &t->elem);
+  list_push_back (&ready_list, &t->elem);
 
   //code for priority schedueling
-  list_insert_ordered (&ready_list, &t->elem, thread_compare_priority, 0);
+  //list_insert_ordered (&ready_list, &t->elem, thread_compare_priority, 0);
   t->status = THREAD_READY;
 
   intr_set_level (old_level);
@@ -444,13 +435,6 @@ thread_exit (void)
   NOT_REACHED ();
 }
 
-
-
-
-
-
-
- 
 /* Yields the CPU.  The current thread is not put to sleep and
    may be scheduled again immediately at the scheduler's whim. */
 void
@@ -464,10 +448,10 @@ thread_yield (void)
   old_level = intr_disable ();
   if (cur != idle_thread)
     //code for priority donation 
-    //list_push_back (&ready_list, &cur->elem);
+    list_push_back (&ready_list, &cur->elem);
 
     //code for priority schedueling
-    list_insert_ordered (&ready_list, &cur->elem, thread_compare_priority, 0);
+    //list_insert_ordered (&ready_list, &cur->elem, thread_compare_priority, 0);
   cur->status = THREAD_READY;
 
   schedule ();
