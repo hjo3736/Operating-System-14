@@ -1,10 +1,6 @@
-gnome-session[2836]: WARNING: Session 'ubuntu' runnable check failed: Exited with code 1
+gnome-session[2704]: WARNING: Session 'ubuntu' runnable check failed: Exited with code 1
 
-(gnome-settings-daemon:2892): power-plugin-WARNING **: gnome-session is not available
-
-(gnome-settings-daemon:2892): color-plugin-WARNING **: failed to get edid: unable to get EDID for output
-
-(gnome-settings-daemon:2892): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+(gnome-settings-daemon:2760): power-plugin-WARNING **: gnome-session is not available
 unity-2d-shell: [DEBUG] bool KeyMonitor::registerEvents(): Could not open device:  Virtual core pointer 
 unity-2d-shell: [DEBUG] bool KeyMonitor::registerEvents(): Could not open device:  Virtual core keyboard 
 unity-2d-panel: [DEBUG] Scanning panel plugin directory "/usr/lib/unity-2d/plugins/panel" 
@@ -14,24 +10,21 @@ unity-2d-panel: [DEBUG] Loading panel plugin: "/usr/lib/unity-2d/plugins/panel/l
 unity-2d-panel: [DEBUG] Loading panel plugin: "/usr/lib/unity-2d/plugins/panel/libpanelplugin-legacytray.so" 
 unity-2d-panel: [DEBUG] Loading panel plugin: "/usr/lib/unity-2d/plugins/panel/libpanelplugin-separator.so" 
 unity-2d-panel: [DEBUG] Configured plugins list is: ("appname", "!legacytray", "indicator") 
+unity-2d-shell: [DEBUG] static void WindowImageProvider::activateComposite(): Server supports the Composite extension (ver 0.4)
 unity-2d-panel: [DEBUG] bool KeyMonitor::registerEvents(): Could not open device:  Virtual core pointer 
 unity-2d-panel: [DEBUG] bool KeyMonitor::registerEvents(): Could not open device:  Virtual core keyboard 
 unity-2d-panel: [WARNING] X Error: BadWindow (invalid Window parameter) 3
   Major opcode: 18 (X_ChangeProperty)
   Resource id:  0x0
-unity-2d-shell: [DEBUG] static void WindowImageProvider::activateComposite(): Server supports the Composite extension (ver 0.4)
-unity-2d-panel: [DEBUG] virtual void Hotkey::connectNotify(const char*): Grabbing hotkey "Alt+F10" 
-unity-2d-panel: [WARNING] X Error: BadWindow (invalid Window parameter) 3
-  Major opcode: 20 (X_GetProperty)
-  Resource id:  0x1800004
 XInput version 2.3 found
+unity-2d-panel: [DEBUG] virtual void Hotkey::connectNotify(const char*): Grabbing hotkey "Alt+F10" 
 ** Message: applet now removed from the notification area
+** Message: using fallback from indicator to GtkStatusIcon
 unity-2d-shell: [WARNING] libindicator: Desktop file '/usr/share/applications/libreoffice-writer.desktop' is using a deprecated format for its actions that will be dropped soon.
 unity-2d-shell: [WARNING] libindicator: Desktop file '/usr/share/applications/libreoffice-calc.desktop' is using a deprecated format for its actions that will be dropped soon.
 unity-2d-shell: [WARNING] libindicator: Desktop file '/usr/share/applications/libreoffice-impress.desktop' is using a deprecated format for its actions that will be dropped soon.
 unity-2d-shell: [DEBUG] virtual void Hotkey::connectNotify(const char*): Grabbing hotkey "Meta+S" 
 unity-2d-shell: [DEBUG] virtual void Hotkey::connectNotify(const char*): Grabbing hotkey "Meta+T" 
-** Message: using fallback from indicator to GtkStatusIcon
 unity-2d-shell: [WARNING] Object::connect: No such signal Lenses::roleNamesChanged(QHash<int,QByteArray>) in /build/buildd/unity-2d-5.14.0/libunity-2d-private/src/qsortfilterproxymodelqml.cpp:65
 unity-2d-shell: [WARNING] void QSortFilterProxyModelQML::setSourceModelQObject(QObject*): received a sourceModel that does not notify of changes of its roleNames 
 unity-2d-shell: [WARNING] file:///usr/share/unity-2d/shell/hud/Hud.qml:145: TypeError: Result of expression 'shellManager.hudShell' [null] is not an object.
@@ -69,12 +62,80 @@ unity-2d-shell: [DEBUG] virtual void Hotkey::connectNotify(const char*): Grabbin
 unity-2d-shell: [DEBUG] virtual void Hotkey::connectNotify(const char*): Grabbing hotkey "Meta+ퟀ" 
 unity-2d-shell: [WARNING] void ApplicationsList::remoteEntryUpdated(const QString&, const QString&, const QString&, const QMap<QString, QVariant>&): Application sent an update but we don't seem to have it in the launcher: "application://nautilus.desktop" 
 unity-2d-shell: [WARNING] void ApplicationsList::remoteEntryUpdated(const QString&, const QString&, const QString&, const QMap<QString, QVariant>&): Application sent an update but we don't seem to have it in the launcher: "application://nautilus.desktop" 
+** Message: moving back from GtkStatusIcon to indicator
 unity-2d-shell: [DEBUG] virtual void Hotkey::connectNotify(const char*): Grabbing hotkey "Meta+A" 
 unity-2d-shell: [DEBUG] virtual void Hotkey::connectNotify(const char*): Grabbing hotkey "Meta+F" 
 unity-2d-shell: [DEBUG] virtual void Hotkey::connectNotify(const char*): Grabbing hotkey "Meta+M" 
 unity-2d-shell: [DEBUG] virtual void Hotkey::connectNotify(const char*): Grabbing hotkey "Meta+V" 
-** Message: moving back from GtkStatusIcon to indicator
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: failed to get edid: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
 unity-2d-shell: [WARNING] void ApplicationsList::remoteEntryUpdated(const QString&, const QString&, const QString&, const QMap<QString, QVariant>&): Application sent an update but we don't seem to have it in the launcher: "application://empathy.desktop" 
 unity-2d-shell: [WARNING] void ApplicationsList::remoteEntryUpdated(const QString&, const QString&, const QString&, const QMap<QString, QVariant>&): Application sent an update but we don't seem to have it in the launcher: "application://empathy.desktop" 
 
-** (zeitgeist-datahub:3285): WARNING **: zeitgeist-datahub.vala:227: Unable to get name "org.gnome.zeitgeist.datahub" on the bus!
+** (zeitgeist-datahub:3160): WARNING **: zeitgeist-datahub.vala:227: Unable to get name "org.gnome.zeitgeist.datahub" on the bus!
+
+(gnome-settings-daemon:2760): GLib-CRITICAL **: g_variant_get_int32: assertion `g_variant_is_of_type (value, G_VARIANT_TYPE_INT32)' failed
+Window manager warning: Invalid WM_TRANSIENT_FOR window 0x3e00003 specified for 0x3e00006 ().
+unity-2d-shell: [WARNING] libindicator: Unable to load keyfile from file '': No such file or directory
+
+(check-new-release-gtk:3174): GLib-GIO-CRITICAL **: g_settings_set_value: key 'release-check-time' in 'com.ubuntu.update-notifier' expects type 'u', but a GVariant of type 'i' was given
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.application' on object at path /org/ayatana/bamf/application0xdc7ac0") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application0xdc7ac0") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application0xdc7ac0") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application0xdc7ac0") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application0xdc7ac0") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.application' on object at path /org/ayatana/bamf/application0xdc7ac0") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application0xdc7ac0") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application0xdc7ac0") 
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Window manager warning: Receiving a NET_CLOSE_WINDOW message for 0x2400006 (new@ubuntu) without a timestamp!  This means some buggy (outdated) application is on the loose!
+Window manager warning: Tried to ping a window with CurrentTime! Not allowed.
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.application' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.application' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.application' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.application' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application311805604") 
+unity-2d-shell: [WARNING] QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "No such interface `org.ayatana.bamf.view' on object at path /org/ayatana/bamf/application311805604") 
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+
+(gnome-settings-daemon:2760): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output

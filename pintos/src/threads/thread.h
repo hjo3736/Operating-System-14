@@ -83,6 +83,12 @@ typedef int tid_t;
 struct thread
   {
     /* Owned by thread.c. */
+    /* only for priority donation
+    int init_priority;
+    struct lock *wait_on_lock;
+    struct list donations;
+    struct list_elem donation_elem;
+    */ 
     int64_t wakeup_tick;
     tid_t tid;                          /* Thread identifier. */
     enum thread_status status;          /* Thread state. */
@@ -138,6 +144,14 @@ int thread_get_nice (void);
 void thread_set_nice (int);
 int thread_get_recent_cpu (void);
 int thread_get_load_avg (void);
+
+void thread_test_preemption (void);
+bool thread_compare_priority (struct list_elem *l, struct list_elem *s, void *aux UNUSED);
+
+bool thread_compare_donate_priority (const struct list_elem *l, const struct list_elem *s, void *aux UNUSED);
+void donate_priority (void);
+void remove_with_lock (struct lock *lock);
+void refresh_priority (void);
 
 void thread_sleep(int64_t ticks);
 

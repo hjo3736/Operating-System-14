@@ -151,3 +151,62 @@ vi timer.c
 cd ..
 cd threads
 pintos -q run alarm-multiple
+git
+sudo apt-get install git
+git config --global user.name hjo3736
+git config --global user.email hjo3736@gm.gist.ac.kr
+git config --global --list
+git init
+git remote add origin https://github.com/hjo3736/Operating-System-14.git
+git add
+git add.
+git add .
+git commit -m "first"
+git push -u origin master
+hjo3736
+git push -u origin master
+git remote set-url https://github.com/hjo3736/Operating-System-14.git
+git push -u origin master
+git remote set-url origin https://github.com/hjo3736/Operating-System-14.git
+git push -u origin master
+ls
+cd pintos/src
+ls
+cd liv
+cd lib
+ls
+cd kernel
+ls
+vi list.c
+cd ..
+cd threads
+clear
+vi thread.c
+make
+vi thread.c
+make
+make check
+clear
+ls
+vi synch.c
+make
+vi synch.c
+make
+vi synch.c
+make
+vi synch.c
+make
+vi synch.c
+make
+vi synch.c
+make
+vi synch.c
+vi thread.h
+make
+vi synch.c
+make
+vi synch.c
+make
+clear
+vi thread.h
+vi thread.c
