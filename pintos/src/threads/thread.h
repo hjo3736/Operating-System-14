@@ -5,6 +5,9 @@
 #include <list.h>
 #include <stdint.h>
 
+#define FDT_PAGES 3
+#define FDCOUNT_LIMIT FDT_PAGES*(1<<9)
+
 /* States in a thread's life cycle. */
 enum thread_status
   {
@@ -88,7 +91,10 @@ struct thread
     struct lock *wait_on_lock;
     struct list donations;
     struct list_elem donation_elem;
-    */ 
+    */
+    int exit_status;
+    struct file **fd_table;
+    int id_fdx; 
     int64_t wakeup_tick;
     tid_t tid;                          /* Thread identifier. */
     enum thread_status status;          /* Thread state. */

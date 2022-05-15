@@ -88,7 +88,21 @@ start_process (void *file_name_)
 int
 process_wait (tid_t child_tid UNUSED) 
 {
-  return -1;
+  struct thread *child = get_child_with_pid(child_tid);
+
+  if(child == NULL) {
+
+    return -1;
+
+  }
+
+  sema_down(&child->wait_sema);
+
+  int exit_ststus = child->exit_status;
+
+  list remove(&child->child_elem);
+  sema_up(&child->free_sema);
+  return exit_ststus;
 }
 
 /* Free the current process's resources. */
