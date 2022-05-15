@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="check_new_release_ignore" mtime="1647327300" type="string">
+		<stringvalue>trusty</stringvalue>
+	</entry>
+</gconf>
